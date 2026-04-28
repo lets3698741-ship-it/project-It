@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+        <link id="theme-style" rel="stylesheet" href="light.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="head">
+       <div class="logo"><img src="YOUR LIBRARY.svg" alt=""></div>
+       <div class="links">
+        <a href=""  class="act">Home</a>
+        <a href="">Explore</a>
+        <a href="">My Shelf</a>
+        <a href="Contact.html">Contact Us</a>
+        <a href="">About Us</a>
+        </div>
+        <div class="search">
+                <div class="li">
+                    
+                   <a href="#" onclick="setTheme('light'); return false;"><img src="sun-alt-svgrepo-com.svg" alt=""></a>
+                 <a href="#" onclick="setTheme('dark'); return false;"><img src="moon-svgrepo-com.svg" alt=""></a>
+                    </div>
+                    <hr>
+                <div class="ri">
+              <a href=""><img src="cart-svgrepo-com (2).svg" alt=""></a>
+              <a href=""> <img src="search-svgrepo-com.svg" alt=""></a>
+              <a href=""><img src="profile-1341-svgrepo-com.svg" alt=""></a>
+                </div>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+    <hr class="c">
+    <footer class="foot">
+        <div class="left">
+            <img  src="YOUR LIBRARY.svg" alt="">
+            <p>© 2024 The Living Library.All rights reserved.</p>
+        </div>
+        <div class="right">
+            <a href="#">Institutional info</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of service</a>
+            <a href="Contact.html">Contact Us</a>
+        </div>
+
+
+
+
+    </footer>
+    <script>
+function setTheme(theme) {
+    let cssFile = document.getElementById("theme-style");
+
+    if (theme === "light") {
+        cssFile.href = "light.css";
+    } else {
+        cssFile.href = "dark.css";
+    }
+
+    /* save user's choice */
+    localStorage.setItem("theme", theme);
+}
+
+/* load saved theme when page opens */
+window.onload = function () {
+    let savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+        document.getElementById("theme-style").href = savedTheme + ".css";
+    }
+}
+</script>
+<style>
+    main{
+        height: 2000px;
+    }
+</style>
+</body>
+</html>
