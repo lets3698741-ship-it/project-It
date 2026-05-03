@@ -1,29 +1,19 @@
-body {
-  background-color: #383840;
-}
-.head {
-  background-color: white;
-}
-.foot {
-  background-color: white;
-}
 .SC1 {
   text-align: center;
   margin-bottom: 40px;
 }
 .SC1 h3 {
   font-size: 40px;
-  color: white;
   margin-bottom: 10px;
   text-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px #fff,
-    0 0 80px #fff;
+    0 0 5px black,
+    0 0 10px black,
+    0 0 20px black,
+    0 0 40px black,
+    0 0 80px black;
 }
 .SC1 p {
-  color: #ddd;
+  color: #333;
   line-height: 1.6;
 }
 main {
